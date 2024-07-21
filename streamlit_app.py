@@ -20,7 +20,7 @@ dataframe = pd.read_csv(
 )
 
 # We have a limited budget, therefore we would like to exclude
-# listings with a price above SGD $170 per night
+# listings with a price above SGD $200 per night
 dataframe = dataframe[dataframe["Price"] <= 200]
 
 # Display as integer
