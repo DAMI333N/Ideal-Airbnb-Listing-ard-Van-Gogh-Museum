@@ -11,7 +11,7 @@ dataframe = pd.read_csv(
     "Airbnb Amsterdam Listings_SGD.csv",
     names=[
         "Airbnb Listing ID",
-        "Price (SGD)",
+        "Price",
         "Latitude",
         "Longitude",
         "Meters from Van Gogh Museum",
@@ -47,7 +47,7 @@ fig = px.scatter_mapbox(
     height=500,
     width=800,
     hover_name="Price",
-    hover_data=["Meters from chosen location", "Location"],
+    hover_data=["Meters from Van Gogh Museum", "Location"],
     labels={"color": "Locations"},
 )
 fig.update_layout(mapbox_style="open-street-map")
